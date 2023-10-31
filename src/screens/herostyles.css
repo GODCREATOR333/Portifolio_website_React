@@ -1,0 +1,26 @@
+.hi_img{
+    position:fixed;
+    left:250px;
+}
+
+.hero_text{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top:150px;
+    left:620px;
+    font-size: 2rem;
+    color:aquamarine;
+    font-family: var(--font-inter), ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+
+.hero_text h2 {
+    margin-bottom: 5px;
+}
+
+.hero_text h4 {
+    margin-top: 5px;
+    font-weight: 200;
+}
