@@ -11,9 +11,10 @@ function Hero() {
                     src={image}
                     alt='Hi_img'
                 /></div>
-            <div className='hero_text' >
+            <div className='hero_content' >
                 <h2>I'm Hari Preetham</h2>
                 <h4>I build interesting stuff</h4>
+                <button className='contact_button'>Get in Touch </button>
             </div>
         </div>
 
