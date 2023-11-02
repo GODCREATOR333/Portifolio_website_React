@@ -24,9 +24,9 @@ function NavBar() {
                     </a>
                 </div>
             </div>
-            <hr width="50%"
-                size="2"
-            />
+            <div className="line" >
+                <hr />
+            </div>
         </div>
     );
 
