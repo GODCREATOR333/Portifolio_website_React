@@ -8,10 +8,10 @@
 .hero_content{
     display: flex;
     flex-direction: column;
-    position: fixed;
-    align-items: center;
-    top:150px;
-    left:620px;
+    position: absolute;
+    align-items: left;
+    top:160px;
+    left:150px;
     font-size: 2rem;
     color:aquamarine;
     font-family: var(--font-inter), ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
@@ -20,6 +20,7 @@
 
 
 .hero_content h2 {
+    font-size: 6rem;
     margin-bottom: 0%;
     background-color: #f3ec78;
     background-image: linear-gradient(45deg, #F6F6F6 , #88FFF7);
@@ -60,37 +61,3 @@
     transition-duration: 50ms;
     background-color:#F94C10;
 }
-
-.react_img{
-    height: 60px;
-    width: 65px;
-    position: fixed;
-    top :460px;
-    left: 530px;
-}
-
-.python_img{
-    position: fixed;
-    height: 100px;
-    width: 100px;
-    top:440px;
-    left: 630px;
-   
-}
-
-.node_img{
-    position: fixed;
-    height: 150px;
-    width: 180px;
-    top:410px;
-    left:730px;
-}
-
-.mongo_img{
-    position: fixed;
-    height: 60px;
-    width: 130px;
-    top:450px;
-    left:880px;
-}
-

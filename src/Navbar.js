@@ -12,6 +12,7 @@ function NavBar() {
     return (
         <div className="navbg">
             <div className="navbar-content">
+                <img className="logo" src="https://pbs.twimg.com/media/FBctw4vXoAQv6CP.jpg:large" alt="logo_img" />
                 <h4 className="nav_text_props">About</h4>
                 <h4 className="nav_text_props">Projects</h4>
                 <h4 className="nav_text_props">Resume</h4>

@@ -2,20 +2,26 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 10px;
+    top: 25px;
     left: 70%;
-    width: 400px;
-    height: fit-content;
+    width: 100%;
 }
 
+.logo{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    right:1250px;
+    top: -35px;
+    padding: 0;
+    margin: 0;
+}
 .navbar-content {
-    justify-content: space-between;
     position: absolute;
     display: flex;
     margin-top:30px;
     padding-left: 20px; 
     left: 0;
-    align-items: baseline;
 }
 
 .social-icons {
@@ -43,7 +49,7 @@
 .line {
     top:50px;
     position: relative; 
-    width: 100%; 
+    width: 400px;
     margin-top: 10px; 
     color: aqua;
 }
