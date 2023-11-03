@@ -23,13 +23,13 @@ function Hero() {
             <div className='hero_content' >
                 <h2>I'm Hari Preetham</h2>
                 <h4>I
-                    <span style={{ fontWeight: '200' }}>
+                    <span style={{ fontWeight: '400' }}>
                         {text}
                     </span>
                 </h4>
                 <div className='buttons'>
                     <button className='contact_button'>Get in Touch </button>
-                    <button className='resume'>Resume</button>
+                    <button className='resume'>Resume <span style={{ fontSize: '18px' }}> ⤓ </span></button>
                 </div>
             </div>
         </div >

@@ -1,11 +1,10 @@
 .backdrop {
     position: absolute;
     width: 100%;
-    background-color: transparent; /* Set the background color to transparent */
+    background-color: transparent;
 }
 
-
-.gradient-overlay {
+.gradient-overlay1 {
     position: absolute;
     top: 0;
     left: 0;
@@ -14,9 +13,25 @@
     background: rgba(0, 0, 0, 0);
     background-image: linear-gradient(
         to top,
-        rgba(0, 0, 0, 0.8) 0%,
+        rgba(0, 0, 0, 0.9) 10%,
         rgba(0, 0, 0, 0) 50%,
         rgba(0, 0, 0, 0.8) 100%
+    );
+}
+    
+
+.gradient-overlay2 {
+    position: absolute;
+    top: 100vh;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0);
+    background-image: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.8) 20%,
+        rgba(0, 0, 0, 0) 50%,
+        rgba(0, 0, 0, 1.5) 90%
     );
 }
     
@@ -31,4 +46,18 @@
     background-image: url('https://4kwallpapers.com/images/wallpapers/among-us-minimal-colorful-space-5k-8k-amoled-3840x2160-4081.png');
     background-size: cover;
     background-position: center;
+}
+
+.backdrop_cover_img2 {
+    z-index: -1;
+    position: absolute;
+    top: 100vh;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/002/016/656/original/minimal-stars-motion-loop-background-for-project-overlay-free-video.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
 }

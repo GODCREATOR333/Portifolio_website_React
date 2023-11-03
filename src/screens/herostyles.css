@@ -1,3 +1,23 @@
+@font-face {
+    font-family: 'Mona Sans';
+    src:
+      url('../fonts/MonaSans/MonaSans/Mona-Sans.woff2') format('woff2 supports variations'),
+      url('../fonts/MonaSans/MonaSans/Mona-Sans.woff2') format('woff2-variations');
+    font-weight: 200 900;
+    font-stretch: 75% 125%;
+  }
+
+  @font-face {
+    font-family: 'Hubot Sans';
+    src:
+      url('../fonts/Hubot-Sans/HubotSans/Hubot-Sans.woff2') format('woff2 supports variations'),
+      url('../fonts/Hubot-Sans/HubotSans/Hubot-Sans.woff2') format('woff2-variations');
+    font-weight: 200 900;
+    font-stretch: 75% 125%;
+  }
+
+
+
 .hero_bg{
     position: absolute;
     top:160px;
@@ -7,7 +27,7 @@
 
 .hi_img{
     position: absolute;
-    left:980px;
+    right:-40%;
     top:90px;
     height: 250px;
     animation: floating 3s ease-in-out infinite
@@ -24,15 +44,15 @@
         transform: translate(0, 0);
     }
 }
-
-.hero_content{
+.hero_content {
     display: flex;
     flex-direction: column;
     align-items: left;
     font-size: 2rem;
-    font-family: var(--font-inter), ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
-    Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: 'Mona Sans','Hubot Sans', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; ;
 }
+
 
 
 .hero_content h2 {
@@ -50,12 +70,13 @@
     margin-top: 0px;
     margin-left: 15px;
     margin-bottom: 20px;
-    font-weight: 200;
+    font-weight: 400;
     background-image: linear-gradient(180deg, #F6F6F6 , #97FEED);
     background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent; 
     -moz-text-fill-color: transparent;
+    
 }
 
 .buttons{
