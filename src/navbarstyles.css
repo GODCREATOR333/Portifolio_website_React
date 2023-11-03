@@ -3,15 +3,14 @@
     flex-direction: column;
     position: absolute;
     top: 25px;
-    left: 70%;
-    width: 100%;
+    left: 68%;
 }
 
 .logo{
     height: 100px;
     width: 100px;
+    right: 1200px;
     position: absolute;
-    right:1250px;
     top: -35px;
     padding: 0;
     margin: 0;
@@ -22,12 +21,6 @@
     margin-top:30px;
     padding-left: 20px; 
     left: 0;
-}
-
-.social-icons {
-    display: flex;
-    gap: 25px; /* Creates space between social icons */
-    margin: 0 15px ;
 
 }
 
@@ -41,6 +34,8 @@
 }
 
 .nav_text_props:hover{
+    transform:scale(1.05);
+    transition-duration: 50ms;
     text-decoration: underline;
     cursor: pointer;
 }
@@ -52,6 +47,50 @@
     width: 400px;
     margin-top: 10px; 
     color: aqua;
+
 }
 
 
+.nav_text_props:hover{
+        color: #fff;
+        text-shadow:
+          /* White glow */
+          0 0 7px #fff,
+          0 0 10px #fff,
+          0 0 21px #fff,
+          /* Green glow */
+          0 0 42px rgb(211, 255, 240),
+          0 0 82px rgb(222, 241, 235),
+          0 0 92px rgb(217, 247, 237),
+          0 0 102px rgb(231, 255, 247),
+          0 0 151px rgb(210, 230, 223);
+}
+
+
+
+
+
+.social-icons a {
+    text-decoration: none; /* Remove default underline */
+    display: inline-block; /* Ensures the icon respects its size */
+    margin: 0 10px; /* Adjust spacing between icons */
+    transition: all 0.3s ease; /* Smooth transition effect */
+    /* Add a subtle glow effect */
+    box-shadow: 0 0 5px 2px rgba(255, 255, 255, 0); /* Initially no glow */
+  }
+  
+  /* Glow effect on hover */
+  .social-icons a:hover {
+    box-shadow: 0 0 5px 2px rgba(255, 255, 255, 0.7); /* Add a glow effect */
+    transform:scale(1.1);
+    transition-duration: 50ms;
+  }
+  
+  /* Underline effect on hover */
+  .social-icons a:hover::after {
+    content: ''; /* Add a pseudo-element */
+    display: block;
+    height: 2px;
+    background-color: white; /* Underline color */
+  }
+  

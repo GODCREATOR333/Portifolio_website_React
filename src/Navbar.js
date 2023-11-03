@@ -15,7 +15,7 @@ function NavBar() {
                 <img className="logo" src="https://pbs.twimg.com/media/FBctw4vXoAQv6CP.jpg:large" alt="logo_img" />
                 <h4 className="nav_text_props">About</h4>
                 <h4 className="nav_text_props">Projects</h4>
-                <h4 className="nav_text_props">Resume</h4>
+                <h4 className="nav_text_props">Experiences</h4>
                 <div className="social-icons">
                     <a href="https://www.linkedin.com/in/hari-preetham-934789201/" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faLinkedin} style={{ color: 'white', ...iconSize }} />

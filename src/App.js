@@ -6,7 +6,7 @@ import BackDrop from './screens/Backdrop';
 
 function App() {
   return (
-    <div>
+    <div >
       <BackDrop />
       <NavBar />
       <Hero />
