@@ -45,6 +45,7 @@
     }
 }
 .hero_content {
+    cursor:default;
     display: flex;
     flex-direction: column;
     align-items: left;
