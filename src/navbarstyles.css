@@ -7,8 +7,8 @@
 }
 
 .logo{
-    height: 100px;
-    width: 100px;
+    height: 90px;
+    width: 90px;
     right: 1200px;
     position: absolute;
     top: -35px;
@@ -93,3 +93,5 @@
     background-color: white; /* Underline color */
   }
   
+
+ 
