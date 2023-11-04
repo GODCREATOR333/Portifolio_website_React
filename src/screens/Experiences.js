@@ -3,7 +3,7 @@ import "./experiencestyles.css"
 
 function Experiences() {
     return (
-        <div className='experience'>
+        <div id='experiences' className='experiences'>
             <h1>Experiences</h1>
         </div>
     )
