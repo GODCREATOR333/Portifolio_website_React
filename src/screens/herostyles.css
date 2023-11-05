@@ -59,15 +59,22 @@
 
 
 
-.hero_content h2 {
+.h2 {
+    font-size: 6rem;
+    margin-bottom: 0%;
+    color: #FFFBF5;
+}
+
+.h2_child{
     font-size: 6rem;
     margin-bottom: 0%;
     background-color: #f3ec78;
-    background-image: linear-gradient(60deg, #F6F6F6 , #88FFF7);
+    background-image: linear-gradient(to right top, #ff00b1, #f600be, #ea00cc, #db00db, #c800ea, #9556ff, #5b74ff, #0087ff, #00abff, #00c9ff, #00e3fe, #5ffbf1);
     background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent; 
     -moz-text-fill-color: transparent;
+
 }
 
 .hero_content h4 {

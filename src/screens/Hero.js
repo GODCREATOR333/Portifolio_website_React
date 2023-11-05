@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { useTypewriter } from 'react-simple-typewriter';
 import image from 'D:\\ALL__BUILDS\\cs-builds\\react-builds\\portifolio-website\\src\\images\\image.png';
 import "./herostyles.css"
@@ -18,7 +18,7 @@ function Hero() {
                     alt='Hi_img'
                 /></div>
             <div className='hero_content' >
-                <h2>I'm Hari Preetham</h2>
+                <h2 className='h2'> I'm  <span className='h2_child'> Hari Preetham </span></h2>
                 <h4>I
                     <span style={{ fontWeight: '400' }}>
                         {text}

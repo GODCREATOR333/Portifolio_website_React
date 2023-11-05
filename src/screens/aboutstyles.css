@@ -16,6 +16,7 @@
     font-stretch: 75% 125%;
   }
 
+  
 
 .about{
     color: aliceblue;
@@ -23,10 +24,83 @@
     background-color:transparent;
     top: 100vh;
     margin: 0;
-    padding: 0;
+    padding: 0 ;
     width: 100%;
     height: 100vh;
     text-align: center;
     font-family: 'Mona Sans','Hubot Sans', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
     Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; ;
 }
+
+.about p {
+  text-align: center;
+  padding: 40px;
+  margin-left: 20%;
+  margin-right:20% ;
+  line-height: 1.5;
+  
+}
+
+.mars_img{
+  position: absolute;
+  transform: rotate(-15deg);
+  top: 100px; 
+  left: 50px; 
+  width: 150px; 
+  height: 200px; 
+  background: radial-gradient(circle at center, transparent, black);
+  opacity: 0.9;
+}
+
+
+@keyframes slide{
+
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translate(-100%);
+
+  }
+}
+
+.logos{
+  top: 10%;
+  overflow: hidden;
+  padding: 60px 0;
+  background-color: rgb(255, 255, 255,0);
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos:before,
+.logos:after{
+  position: absolute;
+  top: 0;
+  width: 400px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+
+}
+.logos:before {
+  left: 0; 
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(0, 0, 0));
+}
+
+.logos:after{
+  right: 0;
+  background: linear-gradient(to left, rgb(0, 0, 0), rgba(255, 255, 255, 0));
+}
+
+.logo_slide{
+  display: inline-block;
+  animation: 25s slide infinite linear;
+}
+
+
+.logo_slide img{
+  height: 60px;
+  margin: 0 20px;
+}
+
