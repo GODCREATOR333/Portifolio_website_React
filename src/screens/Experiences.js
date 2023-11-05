@@ -18,6 +18,18 @@ function Experiences() {
                         <li>Facilitated vital data extraction, offering valuable insights into MIRV aerodynamic effects.</li>
                     </ul>
 
+                    <div className='buttons'>
+                        <a href=''>
+                            <button className='results_button'>View Results
+                                <img src="/results.png" width="25px"></img></button>
+                        </a>
+                        <a href=''>
+                            <button className='code_button'>View Code
+                                <img src="/github.svg" width="25px"></img></button>
+                        </a>
+                    </div>
+
+
                 </div>
                 <div className='container_glass'>
                     <div className='header-container'>
@@ -30,6 +42,16 @@ function Experiences() {
                         <li>Applied reverse engineering skills to optimize models through simulation techniques.</li>
                         <li>Delved into diverse 3D printing technologies, leveraging practical applications for real-world use based on learned insights.</li>
                     </ul>
+                    <div className='buttons'>
+                        <a href=''>
+                            <button className='results_button'>View Results
+                                <img src="/results.png" width="25px"></img></button>
+                        </a>
+                        <a href=''>
+                            <button className='code_button'>View Code
+                                <img src="/github.svg" width="25px"></img></button>
+                        </a>
+                    </div>
 
                 </div>
             </div>

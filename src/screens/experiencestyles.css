@@ -86,3 +86,31 @@ li::before {
   color: rgb(177, 177, 255); /* replace with any color */
   padding-right: 5px; /* space between the marker and the text */
 }
+
+
+
+.results_button, .code_button {
+  background-color: #444; /* dark background */
+  color: #fff; /* white text */
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* transition for smooth hover effect */
+  border-radius: 15px; /* rounded corners */
+}
+
+.results_button:hover, .code_button:hover {
+  background-color: #888; /* lighter background on hover */
+}
+
+.code_button img,
+.results_button img {
+  vertical-align: middle; /* align the image in the middle */
+  margin-left: 10px; /* space between the text and the image */
+}
+
