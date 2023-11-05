@@ -35,6 +35,7 @@
 .containers{
   display: flex;
   flex-direction: row;
+  cursor: default;
 }
 .container_glass{
   margin-top: 5%;
@@ -50,5 +51,38 @@
   border: 1px solid rgba(255, 255,255, 0.18);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   justify-content: space-between;
-  line-height: 1.5;
+  line-height: 1.2
+}
+
+.iitbhu_img,
+.drdo_img{
+  height: 100px;
+  width: 100px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-container .drdo_img,
+.header-container .iitbhu_img {
+  /* Add any additional styles for your img element here */
+  position: relative;
+  top:0%;
+  left: 0;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none; /* hide default marker */
+  padding: 2px;
+}
+
+li::before {
+  content: "►"; /* replace with any character or string */
+  color: rgb(177, 177, 255); /* replace with any color */
+  padding-right: 5px; /* space between the marker and the text */
 }
