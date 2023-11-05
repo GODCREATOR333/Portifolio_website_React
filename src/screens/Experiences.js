@@ -23,7 +23,7 @@ function Experiences() {
                             <button className='results_button'>View Results
                                 <img src="/results.png" width="25px"></img></button>
                         </a>
-                        <a href=''>
+                        <a href='https://github.com/GODCREATOR333/Simulation_Kinetic_Heating' target="_blank" rel="noopener noreferrer">
                             <button className='code_button'>View Code
                                 <img src="/github.svg" width="25px"></img></button>
                         </a>
