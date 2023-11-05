@@ -55,10 +55,12 @@
 
 @keyframes slide{
 
-  from{
-    transform: translateX(0);
+  0%{
+    transform: translateX(0%);
+    transition: 3s ease-in-out;
   }
-  to{
+  100%{
+    transition: 3s ease-in;
     transform: translate(-100%);
 
   }
@@ -95,12 +97,12 @@
 
 .logo_slide{
   display: inline-block;
-  animation: 25s slide infinite linear;
+  animation: 40s slide infinite linear;
 }
 
 
 .logo_slide img{
   height: 60px;
-  margin: 0 20px;
+  margin: 0 25px;
 }
 

@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./aboutstyles.css"
 
 function About() {
+
+
     return (
         <div id='about' className='about'>
             <h1>About</h1>
@@ -26,8 +28,8 @@ function About() {
                     <img src='opencv.svg' alt='opencv_img' />
                     <img src='linux.svg' alt='linux_img' />
                     <img src='autodesk.svg' alt='autodesk_img' />
-                    <img src='ansys.png' alt='ansys_img' />
-                    {/* <img src='adobe.svg' alt='adobe_img' /> */}
+                    <img src='ansys.svg' alt='ansys_img' />
+                    <img src='adobe.svg' alt='adobe_img' />
                     <img src='solidworks.svg' alt='solidworks_img' />
                 </div>
                 <div className='logo_slide'>
@@ -46,10 +48,9 @@ function About() {
                     <img src='linux.svg' alt='linux_img' />
                     <img src='autodesk.svg' alt='autodesk_img' />
                     <img src='ansys.png' alt='ansys_img' />
-                    {/* <img src='adobe.svg' alt='adobe_img' /> */}
+                    <img src='adobe.svg' alt='adobe_img' />
                     <img src='solidworks.svg' alt='solidworks_img' />
                 </div>
-
             </div>
 
 
