@@ -7,6 +7,8 @@ import Hero from './screens/Hero';
 import About from './screens/About.js'
 import Projects from './screens/Projects'
 import Experiences from './screens/Experiences'
+import Contact from './screens/Contact.js'
+
 
 
 function App() {
@@ -33,6 +35,7 @@ function App() {
       <About />
       <Experiences />
       <Projects />
+      <Contact />
       <Link
         to="top"
         spy={true}
@@ -43,6 +46,7 @@ function App() {
       >
         ⬆Back to Top
       </Link>
+
 
     </div>
   )

@@ -33,11 +33,15 @@
 }
 
 .containers{
+  position: relative;
   display: flex;
   flex-direction: row;
   cursor: default;
 }
+
 .container_glass{
+  display: block;
+  align-self: end;
   margin-top: 5%;
   margin-left: 2.5%;
   margin-right: 2.5%;
@@ -51,8 +55,10 @@
   border: 1px solid rgba(255, 255,255, 0.18);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   justify-content: space-between;
-  line-height: 1.2
+  line-height: 1.2;
+  transition:all 0.3s ease 
 }
+
 
 .iitbhu_img,
 .drdo_img{

@@ -32,3 +32,90 @@
     Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; ;
     
 }
+
+.containers{
+position: relative;
+cursor: default;
+
+}
+
+.container_glass{
+display: block;
+align-self: end;
+margin-top: 5%;
+margin-left: 5%;
+margin-right:5%;
+padding: 1% 5%;
+width: 60%;
+text-align: left;
+background: linear-gradient(135deg,rgba(255,255,255,0.09),rgba(255,255,255,0));
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(10px);
+border-radius: 20px;
+border: 1px solid rgba(255, 255,255, 0.18);
+box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+justify-content: space-between;
+line-height: 1.2;
+transition:all 0.3s ease 
+}
+
+
+.netflix_img,
+.drdo_img{
+height: 100px;
+width: 100px;
+}
+
+.header-container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.header-container .drdo_img,
+.header-container .iitbhu_img {
+/* Add any additional styles for your img element here */
+position: relative;
+top:0%;
+left: 0;
+margin: 0;
+padding: 0;
+}
+
+li {
+list-style-type: none; /* hide default marker */
+padding: 2px;
+}
+
+li::before {
+content: "►"; /* replace with any character or string */
+color: rgb(177, 177, 255); /* replace with any color */
+padding-right: 5px; /* space between the marker and the text */
+}
+
+
+
+.results_button, .code_button {
+background-color: #444; /* dark background */
+color: #fff; /* white text */
+border: none;
+padding: 10px 20px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 10px;
+cursor: pointer;
+transition: background-color 0.3s ease; /* transition for smooth hover effect */
+border-radius: 15px; /* rounded corners */
+}
+
+.results_button:hover, .code_button:hover {
+background-color: #888; /* lighter background on hover */
+}
+
+.code_button img,
+.results_button img {
+vertical-align: middle; /* align the image in the middle */
+margin-left: 10px; /* space between the text and the image */
+}

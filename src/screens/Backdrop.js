@@ -37,6 +37,8 @@ function BackDrop() {
             <div className='backdrop_cover_img3' />
             <div className='gradient-overlay4' />
             <div className='backdrop_cover_img4' />
+            <div className='gradient-overlay5' />
+            <div className='backdrop_cover_img5' />
 
         </div>
     )

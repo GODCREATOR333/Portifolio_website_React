@@ -2,6 +2,7 @@ import React from 'react'
 import { useTypewriter } from 'react-simple-typewriter';
 import image from 'D:\\ALL__BUILDS\\cs-builds\\react-builds\\portifolio-website\\src\\images\\image.png';
 import "./herostyles.css"
+import { Link } from 'react-scroll';
 
 function Hero() {
     const [text] = useTypewriter({
@@ -25,7 +26,18 @@ function Hero() {
                     </span>
                 </h4>
                 <div className='buttons'>
-                    <button className='contact_button'>Get in Touch </button>
+                    <Link
+                        activeClass="active"
+                        to="contact"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                        className="buttons"
+                    >
+                        <button className='contact_button'>Get in Touch </button>
+
+                    </Link>
                     <a href="/my_resume.pdf" target="_blank" rel="noopener noreferrer">
                         <button className='resume'>Resume <span style={{ fontSize: '18px' }}> ↗ </span></button>
                     </a>

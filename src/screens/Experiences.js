@@ -1,11 +1,13 @@
 import React from 'react'
 import "./experiencestyles.css"
 
+
 function Experiences() {
+
     return (
         <div id='experiences' className='experiences'>
             <h1>Experiences</h1>
-            <div className=' containers'>
+            <div className='containers'>
                 <div className='container_glass'>
                     <div className='header-container'>
                         <h4>Writing Python Code to calculate complex AeroThermodynamic effects on MIRV's</h4>
@@ -19,13 +21,13 @@ function Experiences() {
                     </ul>
 
                     <div className='buttons'>
-                        <a href=''>
+                        <a href='#resume'>
                             <button className='results_button'>View Results
-                                <img src="/results.png" width="25px"></img></button>
+                                <img src="/results.png" alt='results_png' width="25px"></img></button>
                         </a>
                         <a href='https://github.com/GODCREATOR333/Simulation_Kinetic_Heating' target="_blank" rel="noopener noreferrer">
                             <button className='code_button'>View Code
-                                <img src="/github.svg" width="25px"></img></button>
+                                <img src="/github.svg" alt='github_imag' width="25px"></img></button>
                         </a>
                     </div>
 
@@ -43,13 +45,13 @@ function Experiences() {
                         <li>Delved into diverse 3D printing technologies, leveraging practical applications for real-world use based on learned insights.</li>
                     </ul>
                     <div className='buttons'>
-                        <a href=''>
+                        <a href='#resume'>
                             <button className='results_button'>View Results
-                                <img src="/results.png" width="25px"></img></button>
+                                <img src="/results.png" alt='results_img' width="25px"></img></button>
                         </a>
-                        <a href=''>
+                        <a href='#code'>
                             <button className='code_button'>View Code
-                                <img src="/github.svg" width="25px"></img></button>
+                                <img src="/github.svg" alt=' github_img' width="25px"></img></button>
                         </a>
                     </div>
 
