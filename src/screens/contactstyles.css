@@ -19,11 +19,12 @@
 
 
 .contact{
+  overflow: hidden;
     color: aliceblue;
     position:absolute;
     background-color:transparent;
     top: 400vh;
-    margin: 0;
+    margin: 15 0;
     padding: 0;
     height: 100vh;
     width: 100%;
@@ -35,10 +36,10 @@
 
 
 .footer h4{
-  color: aliceblue;
+    color: aliceblue;
     position:relative;
     background-color:transparent;
-    margin-top: 43%;
+    margin-top: 20%;
     padding: 0;
     width: 100%;
     text-align: center;
@@ -46,4 +47,47 @@
     Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; ;
     font-weight: 400;
   
+}
+
+/* Form container */
+.contactForm {
+  margin-top:10%;
+  max-width: 400px;
+  padding: 0 0 ;
+  margin: 0 auto;
+}
+
+/* Form input styles */
+.form-control {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+}
+
+.form-control::placeholder {
+  color: #bbb;
+}
+
+.errorMessage {
+  color: #ff5c5c;
+  font-size: 14px;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #2196f3;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #0e81d1;
 }
