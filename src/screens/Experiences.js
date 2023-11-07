@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import "./experiencestyles.css"
 
 
@@ -10,7 +10,8 @@ function Experiences() {
             <div className='containers'>
                 <div className='container_glass'>
                     <div className='header-container'>
-                        <h4>Writing Python Code to calculate complex AeroThermodynamic effects on MIRV's</h4>
+                        <h4 style={{ lineHeight: "1.5" }}> Writing Python Code to Compute complex <br />
+                            AeroThermodynamic effects on MIRV's</h4>
                         <img className='drdo_img' src='/drdo.png' alt='drdo_img' />
                     </div>
                     <ul>
@@ -30,9 +31,9 @@ function Experiences() {
                                 <img src="/github.svg" alt='github_imag' width="25px"></img></button>
                         </a>
                     </div>
-
-
                 </div>
+
+
                 <div className='container_glass'>
                     <div className='header-container'>
                         <h4>Additive Manufacturing using 3D printing techniques</h4>
@@ -57,6 +58,7 @@ function Experiences() {
 
                 </div>
             </div>
+            <div class="overlay cards__inner"></div>
         </div>
     )
 }
