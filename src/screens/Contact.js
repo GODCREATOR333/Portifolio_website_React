@@ -1,12 +1,23 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import "./contactstyles.css"
 import emailjs from 'emailjs-com'
 
 const ContactForm = () => {
+
+    const [showAlert, setShowAlert] = useState(false);
+    const Alert = ({ onClose }) => (
+        <div className="alert">
+            <span className="close" onClick={onClose} >&times;</span>
+            <p>Email sent successfully !! </p>
+        </div>
+    );
+
+
     const {
         register,
         handleSubmit,
+        reset,
         formState: { errors }
     } = useForm();
 
@@ -21,15 +32,28 @@ const ContactForm = () => {
         }, '7mD_7ks4HAcpbyvmO')
             .then((response) => {
                 console.log('Email sent!', response);
+                setIsSubmitted(true);
+                setShowAlert(true);
             })
             .catch((error) => {
                 console.error('There was an error sending the email:', error);
             });
     };
 
+    const [isSubmitted, setIsSubmitted] = useState(false);
+
+    useEffect(() => {
+        if (isSubmitted) {
+            reset();
+            setIsSubmitted(false);
+        }
+    }, [isSubmitted, reset]);
+
+
     return (
         <div id='contact' className='contact'>
-            <h1>Get in Touch!</h1>
+            {showAlert && <Alert onClose={() => setShowAlert(false)} />}
+            <h1>Say Hello 👋!</h1>
             <div className='ContactForm'>
                 <div className='container'>
                     <div className='row'>

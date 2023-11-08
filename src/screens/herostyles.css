@@ -135,3 +135,42 @@
     color:rgb(255, 0, 123);
     background-color: #F6F6F6;
 }
+
+@media (max-width: 767px) {
+
+    
+.h2 {
+    font-size: 1.5rem;
+    color: #FFFBF5;
+    position: relative;
+    right: 25%;
+    margin-left: 1%;
+}
+
+.h2_child{
+    font-size: 2rem;
+    margin-bottom: 0%;
+    background-color: transparent;
+    background-image: linear-gradient(to right top, #ff00b1, #f600be, #ea00cc, #db00db, #c800ea, #9556ff, #5b74ff, #0087ff, #00abff, #00c9ff, #00e3fe, #5ffbf1);
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    margin-right: 10%;
+}
+
+
+.hero_content h4 {
+    position: relative;
+    font-size: 1.5rem;
+    right: 27%;
+    margin-bottom: 20px;
+    font-weight: 400;
+    background-image: linear-gradient(180deg, #F6F6F6 , #97FEED);
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    
+}
+}
