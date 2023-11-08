@@ -8,7 +8,7 @@ const ContactForm = () => {
     const [showAlert, setShowAlert] = useState(false);
     const Alert = ({ onClose }) => (
         <div className="alert">
-            <span className="close" onClick={onClose} >&times;</span>
+            <span className="submit-close" onClick={onClose} >&times;</span>
             <p>Email sent successfully !! </p>
         </div>
     );

@@ -132,10 +132,16 @@
   border-radius: 5px;
 }
 
-.close{
+.submit-close{
   color: #fff;
   position: relative;
+  padding-left: 20px;
   left: 20%;
   font-size: x-large;
+  cursor: pointer;
 
+}
+
+.submit-close:hover{
+  color: #888;
 }
