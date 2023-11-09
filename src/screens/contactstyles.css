@@ -58,17 +58,20 @@
   text-align: left;
 
 .info_head{
-  font-size: x-large;
+  color: #F11A7B;
+  font-size: 28px;
   font-weight: 600;
   text-decoration: double;
 }
 
 }
 .h2_info{
-  font-size: 48px;
+  color: #ff5c5c;
+  font-size: 58px;
 }
 
 .p_info{
+  color:#E0F4FF;
 font-size: 20px;
 line-height: 2;
 }
@@ -106,7 +109,7 @@ line-height: 2;
 }
 
 .form-control::placeholder {
-  color: rgb(0, 136, 255);
+  color: #FFA1F5;
 }
 
 .errorMessage {
@@ -124,7 +127,7 @@ line-height: 2;
   padding: 15px;
   border: none;
   border-radius: 5px;
-  background-color: #2196f3;
+  background-color: #95389E;
   color: #fff;
   cursor: pointer;
   transition: background-color 0.3s;
@@ -136,7 +139,8 @@ line-height: 2;
 
 .submit-btn:hover {
   background-color: #fff;
-  color: #2196f3;
+  font-weight: 700;
+  color: #F40968;
 }
 
 .alert {
@@ -152,18 +156,20 @@ line-height: 2;
   z-index: 1000;
 }
 .alert p {
-  background: transparent;
-  color: rgb(44, 235, 44);
-  padding: 20px;
+  background: #252525;
+  color: #16FF00;
+  height: 3%;
+  width: 20%;
+  padding: 1% 3% 1.5% 3%;;
   border-radius: 5px;
 }
 
 .submit-close{
+  z-index: 1;
   color: #fff;
   position: relative;
-  padding-left: 20px;
-  left: 20%;
-  font-size: x-large;
+  left: 25%;
+  font-size: 30PX;
   cursor: pointer;
 
 }
