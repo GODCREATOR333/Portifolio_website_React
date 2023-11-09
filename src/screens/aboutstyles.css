@@ -19,6 +19,7 @@
   
 
 .about{
+  font-size: x-large;
     color: aliceblue;
     position: absolute;
     background-color:transparent;
@@ -33,6 +34,7 @@
 }
 
 .about p {
+  font-size: medium;
   text-align: center;
   padding: 40px;
   margin-left: 20%;

@@ -6,7 +6,7 @@ function About() {
 
     return (
         <div id='about' className='about'>
-            <h1>About</h1>
+            <h1>About Me</h1>
             <img className='mars_img' src='https://images.ctfassets.net/s5uo95nf6njh/5R0oHaRKtnBt8Tcsup81EZ/a2d996227c84b65818505211317aadaa/nasa-ingenuity-helicopter-spot-1.jpg?w=720&fm=avif' alt='mars_img' />
             <p>Hey there 👋! I'm Hari Preetham, a BTech student at Jawaharlal Nehru Technological University, Hyderabad.
                 I'm an enthusiastic engineering student passionate about creating innovative solutions. With a love for mathematics, physics, coding, and design, I aim to craft remarkable technologies.

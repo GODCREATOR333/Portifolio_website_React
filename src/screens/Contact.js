@@ -54,6 +54,11 @@ const ContactForm = () => {
         <div id='contact' className='contact'>
             {showAlert && <Alert onClose={() => setShowAlert(false)} />}
             <h1>Say Hello 👋!</h1>
+            <div className='info'>
+                <h2 className='h2_info'>Let's work <br /> together !</h2>
+                <p className='p_info'> <span className='info_head'>Email : </span>haripreetham.jntuh@gmail.com <br />
+                    <span className='info_head'>Contact :</span> +917013589964</p>
+            </div>
             <div className='ContactForm'>
                 <div className='container'>
                     <div className='row'>

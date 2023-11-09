@@ -19,6 +19,7 @@
 
 
 .contact{
+  font-size: x-large;
   overflow: hidden;
     color: aliceblue;
     position:absolute;
@@ -36,10 +37,11 @@
 
 
 .footer h4{
+  font-size: medium;
     color: aliceblue;
     position:relative;
     background-color:transparent;
-    margin-top: 10%;
+    margin-top: 5%;
     padding: 0;
     width: 100%;
     text-align: center;
@@ -49,15 +51,39 @@
   
 }
 
+.info{
+  position: relative;
+  top: 10%;
+  left: 10%;
+  text-align: left;
+
+.info_head{
+  font-size: x-large;
+  font-weight: 600;
+  text-decoration: double;
+}
+
+}
+.h2_info{
+  font-size: 48px;
+}
+
+.p_info{
+font-size: 20px;
+line-height: 2;
+}
+
+
 
 .container{
   position: relative;
-  margin-top: 5%;
+  margin-top: -15%;
+  left: 20%;
 }
 
 /* Form container */
 .contactForm {
-  max-width: 40%;
+  max-width: 30%;
   padding: 0 0 ;
   margin: 0 auto;
 }

@@ -19,6 +19,7 @@
 
 
 .experiences{
+  font-size: x-large;
     color: #FFFBF5;
     position: absolute;
     top: 200vh;
@@ -41,8 +42,9 @@
 }
 
 .container_glass{
+  font-size: medium;
   position: relative;
-  margin-top: 5%;
+  margin-top: 3%;
   margin-left: 2.5%;
   margin-right: 2.5%;
   text-align: left;
