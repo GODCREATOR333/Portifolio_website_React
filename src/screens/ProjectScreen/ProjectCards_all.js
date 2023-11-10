@@ -8,7 +8,7 @@ function ProjectCards(props) {
                 <img className='card_img' src={props.img} alt='' />
                 <h2 className='card_title'> {props.title}</h2>
                 <p className='card_description'> {props.description}</p>
-                <div className='buttons'>
+                <div className='card_buttons'>
                     <a href='#resume'>
                         <button className='card_results_button'>Read More
                             <img src="/results.png" alt='results_img' width="25px"></img></button>
