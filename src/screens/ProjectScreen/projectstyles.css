@@ -1,0 +1,151 @@
+@font-face {
+    font-family: 'Mona Sans';
+    src:
+      url('../../fonts/MonaSans/MonaSans/Mona-Sans.woff2') format('woff2 supports variations'),
+      url('../../fonts/MonaSans/MonaSans/Mona-Sans.woff2') format('woff2-variations');
+    font-weight: 200 900;
+    font-stretch: 75% 125%;
+  }
+
+  @font-face {
+    font-family: 'Hubot Sans';
+    src:
+      url('../../fonts/MonaSans/MonaSans/Mona-Sans.woff2') format('woff2 supports variations'),
+      url('../../fonts/MonaSans/MonaSans/Mona-Sans.woff2') format('woff2-variations');
+    font-weight: 200 900;
+    font-stretch: 75% 125%;
+  }
+
+
+
+.projects{
+  font-size: x-large;
+    color: aliceblue;
+    position:absolute;
+    background-color:transparent;
+    top: 300vh;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    font-family: 'Mona Sans','Hubot Sans', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; ;
+    
+} 
+
+.tabs{
+  position: relative;
+}
+
+.bloc_tabs{
+  position: relative;
+  display: flex;
+  width: 25%;
+  height: 5%;
+  left: 37%;
+  background-color: #2b2b2b;
+  backdrop-filter: blur(5px);
+  color: black;
+  text-align: center;
+  justify-content: space-between;
+  padding: 1% 1%;
+  border-radius: 15px;
+  border: none;
+}
+
+.tabs-button{
+  font-weight: 600;
+  background-color: #95389E;
+  padding: 5px 8px;
+  transition: transform 0.08s ease-in-out;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+}
+
+.tabs-button:hover{
+  transform: scale(1) translateY(-3px);
+  color: aliceblue;
+}
+
+
+.active-tab{
+  font-weight: 600;
+  background-color:coral;
+  padding: 5px 8px;
+}
+
+.card_img{
+  height: 12rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card_title{
+  padding: 1rem;
+}
+
+.card_title:hover{
+  color: #d50000;
+}
+
+.card_description{
+  padding: 0 1rem;
+}
+
+.card_view_code_btn{
+  padding: 1rem 2rem;
+  gap:0.5rem;
+  font-weight: 700;
+  font-size: 1rem;
+  margin: 1rem;
+  border: 2px solid  #d50000;
+  background:transparent;
+  color: #d50000;
+  border-radius: 0.2rem;
+  transition: background 200ms ease-in,color 200ms ease-in;
+
+}
+
+.cards_heading_gradient{
+  background: -webkit-linear-gradient(0deg, #4ae2a8 0%, #48abe0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card_view_code_btn:hover{
+  transform: scale(1.02);
+
+}
+
+.card_layout {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 1% 5% ;
+  gap:3rem;
+  justify-content: center;
+}
+
+.card{
+  overflow: hidden;
+  box-shadow: 0 2px 20px #2b2b2b;
+  background: transparent;
+  backdrop-filter: blur(3px);
+  border-radius: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: transform 100ms ease-in;
+}
+
+
+.card:hover{
+  transform: scale(1.02);
+}
+
+.card:hover .card_view_code_btn{
+  background:#d50000;
+    color: azure;
+}

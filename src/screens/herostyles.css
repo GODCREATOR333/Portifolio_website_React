@@ -33,7 +33,7 @@
     right:-40%;
     top:90px;
     height: 250px;
-    animation: floating 3s ease-in-out infinite
+    animation: floating 2s ease-in-out infinite
 }
 
 @keyframes floating {

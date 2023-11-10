@@ -24,7 +24,7 @@
     color: aliceblue;
     position:absolute;
     background-color:transparent;
-    top: 400vh;
+    top: 500vh;
     margin: 15 0;
     padding: 0;
     height: 100vh;
@@ -109,7 +109,7 @@ line-height: 2;
 }
 
 .form-control::placeholder {
-  color: #FFA1F5;
+  color: #FCFCFC;
 }
 
 .errorMessage {

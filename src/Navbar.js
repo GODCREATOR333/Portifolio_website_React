@@ -13,7 +13,7 @@ function NavBar() {
     return (
         <div className="navbg">
             <div className="navbar-content">
-                <img className="logo" src="https://pbs.twimg.com/media/FBctw4vXoAQv6CP.jpg:large" alt="logo_img" />
+                <img className="logo" src="https://altcoinsbox.com/wp-content/uploads/2022/10/ethereum-logo-.webp" alt="logo_img" />
                 <Link
                     activeClass="active"
                     to="about"

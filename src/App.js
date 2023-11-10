@@ -5,7 +5,7 @@ import BackDrop from './screens/Backdrop';
 import NavBar from './Navbar';
 import Hero from './screens/Hero';
 import About from './screens/About.js'
-import Projects from './screens/Projects'
+import Projects from './screens/ProjectScreen/Projects.js'
 import Experiences from './screens/Experiences'
 import Contact from './screens/Contact.js'
 

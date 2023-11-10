@@ -83,6 +83,21 @@
     );
 }
 
+.gradient-overlay6 {
+    position: absolute;
+    top: 500vh;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0);
+    background-image: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.8) 0%,
+        rgba(0, 0, 0, 0) 80%,
+        rgba(0, 0, 0, 1.5) 100%
+    );
+}
+
 .backdrop_cover_img1 {
     z-index: -1;
     top: 0;
@@ -148,6 +163,18 @@
     padding: 0;
 }
 
+.backdrop_cover_img6 {
+    z-index: -1;
+    top: 500vh;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/002/016/656/original/minimal-stars-motion-loop-background-for-project-overlay-free-video.jpg');
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
  
 .notification {
     z-index: 1;
