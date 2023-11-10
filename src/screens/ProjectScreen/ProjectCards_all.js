@@ -8,10 +8,16 @@ function ProjectCards(props) {
                 <img className='card_img' src={props.img} alt='' />
                 <h2 className='card_title'> {props.title}</h2>
                 <p className='card_description'> {props.description}</p>
-                <a href='#code'>
-                    <button className='card_view_code_btn'>View Code
-                        <img src="/github.svg" alt=' github_img' width="25px"></img></button>
-                </a>
+                <div className='buttons'>
+                    <a href='#resume'>
+                        <button className='card_results_button'>Read More
+                            <img src="/results.png" alt='results_img' width="25px"></img></button>
+                    </a>
+                    <a href='#code'>
+                        <button className='card_code_button'>View Code
+                            <img src="/github.svg" alt=' github_img' width="25px"></img></button>
+                    </a>
+                </div>
             </div>
 
         </div>
