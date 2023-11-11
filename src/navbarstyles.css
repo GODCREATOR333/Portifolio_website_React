@@ -95,3 +95,32 @@
   
 
  
+  @media (max-width:869px) {
+
+    .navbg{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 25px;
+        right:0%;
+    }
+
+    .navbar-content {
+        position: relative;
+        display: flex;
+        margin-top:30px;
+    }
+
+    .logo{
+        height: 60px;
+        width: 120px;
+        right: 1200px;
+        position:relative;
+        top: -35px;
+        padding: 0;
+        margin: 0;
+    }
+
+
+    
+  }

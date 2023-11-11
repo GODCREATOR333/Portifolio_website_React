@@ -35,14 +35,12 @@ function Experiences() {
                         <div className='modal_content'>
                             <img style={{ height: '350px', width: '700px' }} src='https://wallpapers.com/images/hd/minimal-art-3840-x-2160-wallpaper-lv6t5xn2pu81hcyg.jpg' alt='modal_img' />
                             <h2>Simulation_Kinetic_Heating </h2>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
-                                recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
-                                recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
-                                recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
-                                recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                            <p>Developed Python-based solutions to address critical aerodynamic heating challenges in MIRVs
+                                (Multiple independently targetable reentry vehicles) at DRDL. Transformed trajectory calculations and
+                                aerodynamic heating assessment by creating optimized code using NumPy, SciPy, and advanced
+                                numerical methods. Improved accuracy and efficiency significantly compared to previous MATLAB
+                                code. Enhanced the code's versatility to simulate various conditions, providing crucial insights into skin
+                                temperature and transient heat behavior, which were previously unattainable
                             </p>
                             <button onClick={closeAllModals} className='close_modal'>X</button>
                         </div>
@@ -54,15 +52,11 @@ function Experiences() {
                     <div className='overlay'>
                         <div className='modal_content'>
                             <img style={{ height: '350px', width: '700px' }} src='https://images.pling.com/img/00/00/64/96/96/1730165/nature-minimalist-style-241.jpg' alt='modal_img' />
-                            <h2>Simulation_Kinetic_Heating </h2>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
-                                recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
-                                recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
-                                recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
-                                recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                            <h2>Additive Manufacturing using 3D printing techniques</h2>
+                            <p>• I gained proficiency in CAD modeling, including techniques like Stereolithography. I developed skills in
+                                reverse engineering and conducted simulations to optimize models. Additionally, I explored topology
+                                optimization and deepened my understanding of diverse 3D printing technologies and their practical
+                                applications.
                             </p>
                             <button onClick={closeAllModals} className='close_modal'>X</button>
                         </div>

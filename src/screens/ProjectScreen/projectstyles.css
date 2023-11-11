@@ -44,9 +44,9 @@
   width: 25%;
   height: 5%;
   left: 37%;
-  background-color: #2b2b2b;
+  background-color: #2E0249;
   backdrop-filter: blur(5px);
-  color: black;
+  color: #EEEEEE;
   text-align: center;
   justify-content: space-between;
   padding: 1% 1%;
@@ -56,7 +56,7 @@
 
 .tabs-button{
   font-weight: 600;
-  background-color: #95389E;
+  background-color: #570A57;
   padding: 5px 8px;
   transition: transform 0.08s ease-in-out;
   cursor: pointer;
@@ -72,7 +72,7 @@
 
 .active-tab{
   font-weight: 600;
-  background-color:coral;
+  background-color:#A91079;
   padding: 5px 8px;
   
 }
@@ -91,7 +91,7 @@
 }
 
 .card_title:hover{
-  color:#d50000;
+  color:#F94C10;
 }
 
 .card_description{
@@ -103,25 +103,26 @@
   position: absolute;
   bottom: 10px;
 }
+
 .card_results_button, .card_code_button {
-  background-color: transparent; /* dark background */
-  color: #FFFBF5; /* white text */
-  border: 2px solid #d50000;
+  background-color: transparent; 
+  color: #EEEEEE;
+  border: 2px solid #A91079; 
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 18px;
+  font-weight: bold;
   margin: 6px 16px;
   cursor: pointer;
   transition: background-color 0.3s ease; 
-  border-radius: 15px; 
+  border-radius: 10px; 
 }
 
 .card_results_button:hover, .card_code_button:hover {
-  background-color: #fff;
-  color: #d50000;
+  background-color: #7a7a7a;
+  color: #EEEEEE;
 }
 
 .card_code_button img,
@@ -133,10 +134,11 @@
 
 
 .cards_heading_gradient{
-  background: -webkit-linear-gradient(0deg, #4ae2a8 0%, #48abe0 100%);
+  background: linear-gradient( 135deg, #1bcd1e, #4adcf1 );
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  
 }
 
 .card_layout {
@@ -179,17 +181,51 @@
   align-items: center;
   justify-content: center;
   left: 110%;
-  background-color: transparent; /* dark background */
+  background-color: #54B435; /* dark background */
   color: #FFFBF5; /* white text */
-  border: 2px solid #00d591;
+  border: none;
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 600;
   margin: 6px 16px;
   cursor: pointer;
-  transition: background-color 0.3s ease; 
+  transition: background-color 0.1s ease; 
   border-radius: 15px; 
 }
+
+.load_btn:hover{
+  background-color: aliceblue;
+  color: #54B435;
+
+}
+
+.try_btn{
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  background-color: #54B435; /* dark background */
+  color: #FFFBF5; /* white text */
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 6px 16px;
+  cursor: pointer;
+  transition: background-color 0.1s ease; 
+  border-radius: 15px; 
+}
+
+.try_btn:hover{
+  background-color: #54B435;
+  color:#ECF9FF;
+
+}
+
+

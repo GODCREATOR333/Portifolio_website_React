@@ -30,11 +30,17 @@ function ProjectCards(props) {
                                 <img style={{ height: '350px', width: '700px' }} src={props.modal_img2} alt='modal_img2' />
                             )}
                             <p>{props.modal_description}</p>
+                            {props.modal_try_link && (
+                                <a href={props.modal_try_link} target="_blank" rel="noopener noreferrer">
+                                    <button className='try_btn'>Check it Out!!</button>
+                                </a>
+                            )}
                             <button onClick={toggleModal} className='close_modal'>X</button>
                         </div>
                     </div>
                 </div>
-            )}
+            )
+            }
             <div className='card'>
                 <div className='card_body'>
                     <img className='card_img' src={props.img} alt='' />
@@ -51,7 +57,7 @@ function ProjectCards(props) {
                 </div>
 
             </div>
-        </div>
+        </div >
     )
 }
 

@@ -208,3 +208,47 @@
     color: #888;
   }
   
+ 
+  @media (max-width:869px) {
+
+    .notification {
+        z-index: 1;
+        position: absolute;
+        margin-top: 28%;
+        width: 100%;
+        height: 4vh;
+        background-color: #f0f0f0;
+        padding: 10px;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(210, 12, 12, 0.1);
+        align-items: center;
+        cursor: default;
+        font-family: 'Mona Sans','Hubot Sans', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+        Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; ;
+      }
+      
+      .close {
+        color: #000;
+        float: right;
+        padding-right:8% ;
+        font-size: 30px;
+        font-weight: bold;
+        cursor: pointer;
+        
+      }
+
+      .backdrop_cover_img1 {
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-image: url('https://4kwallpapers.com/images/wallpapers/among-us-minimal-colorful-space-5k-8k-amoled-3840x2160-4081.png');
+        background-size: cover;
+        background-position: center;
+        
+    }
+
+    
+    
+  }
