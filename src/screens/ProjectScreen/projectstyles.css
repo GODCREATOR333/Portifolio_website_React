@@ -74,12 +74,14 @@
   font-weight: 600;
   background-color:coral;
   padding: 5px 8px;
+  
 }
 
 .card_img{
   height: 12rem;
   width: 100%;
   object-fit:contain;
+  margin-top: 25px ;
 }
 
 .card_title{
@@ -133,6 +135,7 @@
 .cards_heading_gradient{
   background: -webkit-linear-gradient(0deg, #4ae2a8 0%, #48abe0 100%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -147,11 +150,10 @@
 .card{
   position: relative;
   overflow: hidden;
-  box-shadow: 0 1px 1px rgba(255,255,255,0.3), 
-               0 2px 2px rgba(255,255,255,0.2), 
-               0 3px 3px rgba(255,255,255,0.1), 
-               0 4px 4px rgba(255,255,255,0.1), 
-               0 5px 5px rgba(255,255,255,0.1);
+  box-shadow: 0 0 2px rgba(255,255,255,0.2), 
+            0 0 3px rgba(255,255,255,0.1), 
+            0 0 4px rgba(255,255,255,0.1), 
+            0 0 5px rgba(255,255,255,0.1);
 
   background: transparent;
   backdrop-filter: blur(3px);
@@ -171,4 +173,24 @@
 .card:hover .card_view_code_btn{
   background:#d50000;
     color: azure;
+}
+
+.load_btn{
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  left: 110%;
+  background-color: transparent; /* dark background */
+  color: #FFFBF5; /* white text */
+  border: 2px solid #00d591;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 6px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+  border-radius: 15px; 
 }

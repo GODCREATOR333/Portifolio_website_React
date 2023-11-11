@@ -5,10 +5,68 @@ import ProjectCards from './ProjectCards_all';
 
 function Tabs() {
     const [activeTab, setActiveTab] = useState('All');
+    const [numCardsToShow, setNumCardsToShow] = useState(6); // New state variable
+
 
     const handleTabClick = (tab) => {
         setActiveTab(tab);
     };
+
+    const cards = [
+        <ProjectCards
+            img='https://user-images.githubusercontent.com/66235065/266802174-86fe18d2-9e94-4f67-bed6-98b30cb82e7a.PNG'
+            title="TrackMaster 3.0"
+            description="A full-stack project that uses computer vision, machine learning models from TensorFlow and AI
+            algorithms to authenticate a user's workout activity and recommend workout and diet plans."
+        />,
+        <ProjectCards
+            img='https://i.imgur.com/uNL5qyt.png'
+            title="Netflix Clone"
+            description="A  Netflix clone with the help of TMDB api, with the features to create an
+            account using firebase as backaend as a service. It also updates in real time"
+        />,
+        <ProjectCards
+            img='https://i.imgur.com/6pWzJ8y.jpg'
+            title="Pose detection "
+            description="Using ML models from TensorFlow like Movenet.lightning, movenet.thunder and PoseNet to track 17 key points 
+                                on the body and predict pose in real-time"
+        />,
+        <ProjectCards
+            img='https://i.imgur.com/9Fo2XvM.png'
+            title="Aerodynamic Heating Simulation"
+            description="Developed python code simulate the effects of complex aerothermodynamic on MIRV's during re-entry 
+                                just with the help of trajectory data"
+        />,
+        <ProjectCards
+            img='https://i.imgur.com/WLJGCry.png'
+            title="Portifolio website"
+            description="Using React, I have created this portifolio website to showcase my work. This website is like a 
+                                digital catalogue of my journey and experiences in my career"
+        />,
+        <ProjectCards
+            img='https://i.pinimg.com/originals/99/40/6d/99406daa1257193d38b13defb83a05c7.png'
+            title="API Fusion Analytics"
+            description="This project to solidify my understanding of API's and visualize the 
+                                interaction of API's and produced insights from the data fetched from API's"
+        />,
+        <ProjectCards
+            img='https://i.pinimg.com/originals/99/40/6d/99406daa1257193d38b13defb83a05c7.png'
+            title="Thinking....."
+            description="(LOL)"
+        />,
+        <ProjectCards
+            img='https://i.pinimg.com/originals/99/40/6d/99406daa1257193d38b13defb83a05c7.png'
+            title="Thinking....."
+            description="(LOL)"
+        />,
+        <ProjectCards
+            img='https://i.pinimg.com/originals/99/40/6d/99406daa1257193d38b13defb83a05c7.png'
+            title="Thinking....."
+            description="(LOL)"
+        />,
+
+    ];
+
 
     return (
         <div className='tabs'>
@@ -44,42 +102,14 @@ function Tabs() {
                     <div className='content'>
                         <h2><span className='cards_heading_gradient'> All </span> Projects </h2>
                         <div className='card_layout'>
-                            <ProjectCards
-                                img='https://user-images.githubusercontent.com/66235065/266802174-86fe18d2-9e94-4f67-bed6-98b30cb82e7a.PNG'
-                                title="TrackMaster 3.0"
-                                description="A full-stack project that uses computer vision, machine learning models from TensorFlow and AI
-                                algorithms to authenticate a user's workout activity and recommend workout and diet plans."
-                            />
-                            <ProjectCards
-                                img='https://i.imgur.com/uNL5qyt.png'
-                                title="Netflix Clone"
-                                description="A  Netflix clone with the help of TMDB api, with the features to create an
-                                account using firebase as backaend as a service. It also updates in real time"
-                            />
-                            <ProjectCards
-                                img='https://i.imgur.com/6pWzJ8y.jpg'
-                                title="Pose detection "
-                                description="Using ML models from TensorFlow like Movenet.lightning, movenet.thunder and PoseNet to track 17 key points 
-                                on the body and predict pose in real-time"
-                            />
-                            <ProjectCards
-                                img='https://i.imgur.com/9Fo2XvM.png'
-                                title="Aerodynamic Heating Simulation"
-                                description="Developed python code simulate the effects of complex aerothermodynamic on MIRV's during re-entry 
-                                just with the help of trajectory data"
-                            />
-                            <ProjectCards
-                                img='https://i.imgur.com/WLJGCry.png'
-                                title="Portifolio website"
-                                description="Using React, I have created this portifolio website to showcase my work. This website is like a 
-                                digital catalogue of my journey and experiences in my career"
-                            />
-                            <ProjectCards
-                                img='https://wallpapercave.com/wp/wp11705135.jpg'
-                                title="API Fusion Analytics"
-                                description="This project to solidify my understanding of API's and visualize the 
-                                interaction of API's and produced insights from the data fetched from API's"
-                            />
+                            {/* Slice the array of cards to only include the number of cards to show */}
+                            {cards.slice(0, numCardsToShow)}
+                            {/* Conditionally render the "Load More" or "Load Less" button */}
+                            {numCardsToShow < cards.length ? (
+                                <button className='load_btn' onClick={() => setNumCardsToShow(numCardsToShow + 3)}>Load More</button>
+                            ) : (
+                                <button className='load_btn' onClick={() => setNumCardsToShow(6)}>Load Less</button>
+                            )}
                         </div>
 
                     </div>

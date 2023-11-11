@@ -7,7 +7,6 @@ import Hero from './screens/Hero';
 import About from './screens/About.js'
 import Projects from './screens/ProjectScreen/Projects.js'
 import Experiences from './screens/Experiences'
-import Contact from './screens/Contact.js'
 
 
 
@@ -35,7 +34,6 @@ function App() {
       <About />
       <Experiences />
       <Projects />
-      <Contact />
       <Link
         to="top"
         spy={true}
