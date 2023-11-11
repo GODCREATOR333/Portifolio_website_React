@@ -1,11 +1,9 @@
-import React, { useState } from 'react'
+import React from 'react'
 import "./projectstyles.css"
 import Tabs from './Tabs'
 import ContactForm from '../Contact';
 
 function Projects() {
-
-    const [numCardsToShow, setNumCardsToShow] = useState(6);
 
     return (
         <div id='projects' className='projects'>

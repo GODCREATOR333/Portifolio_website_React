@@ -1,12 +1,74 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./experiencestyles.css"
 
 
 function Experiences() {
 
+    const [modal1, setModal1] = useState(false);
+    const [modal2, setModal2] = useState(false);
+
+    const toggleModal1 = () => {
+        setModal1(!modal1);
+    };
+
+    const toggleModal2 = () => {
+        setModal2(!modal2);
+    };
+
+    const closeAllModals = () => {
+        setModal1(false);
+        setModal2(false);
+    };
+
+    if (modal1 || modal2) {
+        document.body.classList.add('active-modal');
+    } else {
+        document.body.classList.remove('active-modal');
+    }
+
     return (
         <div id='experiences' className='experiences'>
             <h1>Experiences</h1>
+            {modal1 && (
+                <div className='modal'>
+                    <div className='overlay'>
+                        <div className='modal_content'>
+                            <img style={{ height: '350px', width: '700px' }} src='https://wallpapers.com/images/hd/minimal-art-3840-x-2160-wallpaper-lv6t5xn2pu81hcyg.jpg' alt='modal_img' />
+                            <h2>Simulation_Kinetic_Heating </h2>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+                                recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+                                recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+                                recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+                                recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                            </p>
+                            <button onClick={closeAllModals} className='close_modal'>X</button>
+                        </div>
+                    </div>
+                </div>
+            )}
+            {modal2 && (
+                <div className='modal'>
+                    <div className='overlay'>
+                        <div className='modal_content'>
+                            <img style={{ height: '350px', width: '700px' }} src='https://images.pling.com/img/00/00/64/96/96/1730165/nature-minimalist-style-241.jpg' alt='modal_img' />
+                            <h2>Simulation_Kinetic_Heating </h2>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+                                recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+                                recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+                                recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+                                recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                            </p>
+                            <button onClick={closeAllModals} className='close_modal'>X</button>
+                        </div>
+                    </div>
+                </div>
+            )}
             <div className='containers'>
                 <div className='container_glass'>
                     <div className='header-container'>
@@ -23,7 +85,7 @@ function Experiences() {
 
                     <div className='buttons'>
                         <a href='#resume'>
-                            <button className='results_button'>View Results
+                            <button onClick={toggleModal1} className='results_button'>View Results
                                 <img src="/results.png" alt='results_png' width="25px"></img></button>
                         </a>
                         <a href='https://github.com/GODCREATOR333/Simulation_Kinetic_Heating' target="_blank" rel="noopener noreferrer">
@@ -47,7 +109,7 @@ function Experiences() {
                     </ul>
                     <div className='buttons'>
                         <a href='#resume'>
-                            <button className='results_button'>View Results
+                            <button onClick={toggleModal2} className='results_button'>View Results
                                 <img src="/results.png" alt='results_img' width="25px"></img></button>
                         </a>
                         <a href='#code'>
@@ -58,9 +120,9 @@ function Experiences() {
 
                 </div>
             </div>
-            <div class="overlay cards__inner"></div>
         </div>
     )
 }
 
 export default Experiences
+
