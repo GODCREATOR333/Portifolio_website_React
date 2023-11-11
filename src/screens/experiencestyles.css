@@ -176,3 +176,15 @@ body.active-modal {
 
 }
 
+@media (max-width : 896px ){
+
+  
+.containers{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  cursor: default;
+  
+}
+
+}

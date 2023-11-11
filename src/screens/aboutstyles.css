@@ -109,6 +109,76 @@
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width:896px) {
+  .about{
+    font-size: medium;
+      color: aliceblue;
+      position: absolute;
+      background-color:transparent;
+      top: 100vh;
+      margin: 0;
+      padding: 0 ;
+      width: 100%;
+      height: 100vh;
+      text-align: center;
+      font-family: 'Mona Sans','Hubot Sans', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+      Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; ;
+  }
+
+  .mars_img{
+    position: absolute;
+    transform: rotate(-15deg);
+    top: -10%; 
+    left: 50px; 
+    width: 70px; 
+    height: 90px; 
+    background: radial-gradient(circle at center, transparent, black);
+    opacity: 0.9;
+    z-index: 0;
+  }
   
+  .about p {
+    font-size: small;
+    text-align: left;
+    padding: 0px;
+    margin-left: 20%;
+    margin-right:20% ;
+    line-height: 1.5;
+  }
+
+  .logos{
+    top: 2%;
+    overflow: hidden;
+    padding: 60px 0;
+    background-color: rgb(255, 255, 255,0);
+    white-space: nowrap;
+    position: relative;
+  }
+
+  .logos:after{
+    right: 0;
+    z-index: 999999;
+    background: linear-gradient(to left, rgb(0, 0, 0), rgba(255, 255, 255, 0));
+  }
+
 }

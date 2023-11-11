@@ -42,7 +42,7 @@
   display: none;
   position: fixed;
   bottom: 20px;
-  right: 50px;
+  right: 5%;
   border: none;
   border-radius: 30px;
   text-align: center;
@@ -76,4 +76,25 @@
 @keyframes fadeOut {
   from { opacity: 1; }
   to { opacity: 0; }
+}
+
+@media (max-width:896px) {
+  .back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 10%;
+    border: none;
+    border-radius: 30px;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    opacity: 0;
+    animation: fadeOut 0.5s ease-in-out forwards;
+    font-family: 'Mona Sans','Hubot Sans', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
 }

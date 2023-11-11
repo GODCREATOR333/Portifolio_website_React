@@ -215,10 +215,9 @@
         z-index: 1;
         position: absolute;
         margin-top: 28%;
-        width: 100%;
+        width: 95%;
         height: 4vh;
         background-color: #f0f0f0;
-        padding: 10px;
         text-align: center;
         box-shadow: 0 4px 6px rgba(210, 12, 12, 0.1);
         align-items: center;
@@ -247,6 +246,11 @@
         background-size: cover;
         background-position: center;
         
+    }
+
+    .buttons{
+        position: relative;
+        margin-right: 50%;
     }
 
     
