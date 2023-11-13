@@ -8,6 +8,23 @@ import About from './screens/About.js'
 import Projects from './screens/ProjectScreen/Projects.js'
 import Experiences from './screens/Experiences'
 
+import { getAnalytics, logEvent } from "firebase/analytics";
+import { initializeApp } from "firebase/app";
+
+
+const firebaseConfig = {
+  apiKey: "AIzaSyBogWNVOeEfyOQc4AQtGC2_FPiKQ3Xz6QQ",
+  authDomain: "haripreetham-portifolio.firebaseapp.com",
+  projectId: "haripreetham-portifolio",
+  storageBucket: "haripreetham-portifolio.appspot.com",
+  messagingSenderId: "167895926596",
+  appId: "1:167895926596:web:d76f89ffdcd093db7ef911",
+  measurementId: "G-3856DEG089"
+};
+
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
 
 
 function App() {
@@ -23,6 +40,7 @@ function App() {
     };
 
     window.addEventListener('scroll', checkScroll);
+    logEvent(analytics, 'page_view');
     return () => window.removeEventListener('scroll', checkScroll);
   }, []);
 
