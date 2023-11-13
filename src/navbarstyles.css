@@ -2,24 +2,26 @@
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 25px;
-    left: 68%;
+    top:0;
+    margin-left: 70%;
+    align-items: baseline;
+    justify-content:space-between ;
 }
 
 .logo{
     height: 60px;
     width: 120px;
-    right: 1200px;
     position: absolute;
-    top: -35px;
-    padding: 0;
-    margin: 0;
+    margin-top: 1%;
+    margin-left: -260%;
 }
+
+
 .navbar-content {
     position: absolute;
     display: flex;
     margin-top:30px;
-    padding-left: 20px; 
+    padding-left: 0; 
     left: 0;
 }
 
@@ -70,6 +72,7 @@
 
 
 .social-icons a {
+    position: relative;
     text-decoration: none; /* Remove default underline */
     display: inline-block; /* Ensures the icon respects its size */
     margin: 0 10px; /* Adjust spacing between icons */
@@ -92,35 +95,95 @@
     height: 2px;
     background-color: white; /* Underline color */
   }
-  
 
- 
-  @media (max-width:869px) {
+
+
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 2rem;
+    height: 2rem;
+    margin-right: 10%;
+    margin-top: 20px;
+    z-index: 30;
+    cursor: pointer;
+}
+
+.hamburger-menu div {
+    width: 2rem;
+    height: 0.25rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+    position: relative;
+    transform-origin: 1px;
+}
+
+/* Rotate first bar */
+.hamburger-menu.open .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+/* Fade out the second bar */
+.hamburger-menu.open .bar:nth-child(2) {
+    opacity: 0;
+}
+
+/* Rotate third bar */
+.hamburger-menu.open .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+
+@media (max-width: 869px) {
 
     .navbg{
         position: absolute;
-        display: flex;
-        flex-direction: column;
-        top: 0;
-        left:-5%;
-        z-index: 9999;
+        margin-left: 80%;
+        margin-top: 5% ;
     }
 
-    .navbar-content {
-        position: absolute;
-        display: flex;
-        margin-top:7%;
-    }
 
     .logo{
-        height: 20px;
-        width: 60px;
-        left: -5%;
-        position:absolute;
-        margin-top: 15%;
-        padding: 0;
+        height: 60px;
+        width: 120px;
+        position: absolute;
+        top: 0;
+        margin-left: -1000%;
+    }
+    
+    
+        
+    .hamburger-menu {
+            display: flex;
+        }
+
+    .nav-links {
+            transform: translateX(100%);
+            transition: transform 0.3s ease-in-out;
+        }
+
+    .nav-links.open {
+            transform: translateX(0);
+        }
+
+        
+    .navbar-content {
+        display: none;
+    }
+
+    .line{
+        display: none;
     }
 
 
-    
-  }
+
+    .navbar-content.open {
+        display: flex;
+
+    }
+
+}
+
+

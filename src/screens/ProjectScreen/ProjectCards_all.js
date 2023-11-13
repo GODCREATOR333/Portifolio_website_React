@@ -23,11 +23,11 @@ function ProjectCards(props) {
                     <div className='overlay'>
                         <div className='modal_content'>
                             {props.modal_head_img && (
-                                <img style={{ height: '350px', width: '700px' }} src={props.modal_head_img} alt='modal_img' />
+                                <img className='modal_img' src={props.modal_head_img} alt='modal_img' />
                             )}
                             <h2>{props.modal_title}</h2>
                             {props.modal_img2 && (
-                                <img style={{ height: '350px', width: '700px' }} src={props.modal_img2} alt='modal_img2' />
+                                <img className='modal_img' src={props.modal_img2} alt='modal_img2' />
                             )}
                             <p>{props.modal_description}</p>
                             {props.modal_try_link && (

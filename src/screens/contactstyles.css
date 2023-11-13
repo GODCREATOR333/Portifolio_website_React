@@ -253,7 +253,7 @@
 }
 
 .contactForm {
-  max-width: 50%;
+  max-width: 80%;
   padding: 0 0 ;
   margin: 0 auto;
 }
@@ -272,16 +272,15 @@
     Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; ;
     font-weight: 600;
     font-size: 18px;
+    margin-bottom: 10%;
 }
 
-
 .footer h4{
-  font-size: small;
+  font-size: medium;
     color: aliceblue;
     position:relative;
     background-color:transparent;
-    margin-top: 20%;
-    margin-bottom: 3%;
+    margin-top: 5%;
     padding: 0;
     width: 100%;
     text-align: center;
@@ -293,7 +292,7 @@
 
 .footer {
   position: sticky;
-  bottom: 5px; /* Stick to bottom of container */
+  bottom: 0; /* Stick to bottom of container */
 }
 
 .contact{
@@ -312,7 +311,7 @@
     color: aliceblue;
     position:relative;
     background-color:transparent;
-    margin-top: 0%;
+    margin-top: 10%;
     margin: 15 0;
     padding: 0;
     height: 100vh;
@@ -323,6 +322,25 @@
     
 }
 
+.alert p {
+  background: #252525;
+  color: #16FF00;
+  height: 4%;
+  width: 80%;
+  padding: 1% 3% 0% 3%;;
+  border-radius: 5px;
+}
+
+.submit-close{
+  z-index: 1;
+  color: #fff;
+  position: relative;
+  left: 83%;
+  font-size: 30PX;
+  cursor: pointer;
+  align-items: baseline;
+
+}
 
   
  

@@ -33,7 +33,7 @@ function Experiences() {
                 <div className='modal'>
                     <div className='overlay'>
                         <div className='modal_content'>
-                            <img style={{ height: '350px', width: '700px' }} src='https://wallpapers.com/images/hd/minimal-art-3840-x-2160-wallpaper-lv6t5xn2pu81hcyg.jpg' alt='modal_img' />
+                            <img className='modal_img' src='https://wallpapers.com/images/hd/minimal-art-3840-x-2160-wallpaper-lv6t5xn2pu81hcyg.jpg' alt='modal_img' />
                             <h2>Simulation_Kinetic_Heating </h2>
                             <p>Developed Python-based solutions to address critical aerodynamic heating challenges in MIRVs
                                 (Multiple independently targetable reentry vehicles) at DRDL. Transformed trajectory calculations and
@@ -51,7 +51,7 @@ function Experiences() {
                 <div className='modal'>
                     <div className='overlay'>
                         <div className='modal_content'>
-                            <img style={{ height: '350px', width: '700px' }} src='https://images.pling.com/img/00/00/64/96/96/1730165/nature-minimalist-style-241.jpg' alt='modal_img' />
+                            <img className='modal_img' src='https://images.pling.com/img/00/00/64/96/96/1730165/nature-minimalist-style-241.jpg' alt='modal_img' />
                             <h2>Additive Manufacturing using 3D printing techniques</h2>
                             <p>• I gained proficiency in CAD modeling, including techniques like Stereolithography. I developed skills in
                                 reverse engineering and conducted simulations to optimize models. Additionally, I explored topology

@@ -176,7 +176,40 @@ body.active-modal {
 
 }
 
+.modal_img{
+  height: 10%;
+  width: 90%;
+}
+
+.buttons{
+  display: flex;
+}
+
 @media (max-width : 896px ){
+
+  
+.experiences{
+  font-size: x-large;
+  background: 
+      linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.8) 0%,
+        rgba(0, 0, 0, 0) 80%,
+        rgba(0, 0, 0, 1.5) 100%
+      ),
+      url('https://static.vecteezy.com/system/resources/thumbnails/002/016/656/original/minimal-stars-motion-loop-background-for-project-overlay-free-video.jpg')
+      repeat center center / contain , #000; 
+    color: #FFFBF5;
+    position: absolute;
+    top: 200vh;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    font-family: 'Mona Sans','Hubot Sans', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; ;
+}
 
   
 .containers{
@@ -186,5 +219,61 @@ body.active-modal {
   cursor: default;
   
 }
+
+
+.results_button, .code_button {
+  background-color: #1C1427; 
+  color: #FFFBF5; 
+  border: none;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+  border-radius: 15px; 
+  width: 100%;
+  padding: 10px ;
+  display: flex;
+}
+
+.results_button{
+  position: relative;
+  margin-left: -10%;
+}
+
+.code_button{
+  position: relative;
+  margin-right: 0;
+}
+
+.modal_content {
+  top: 10%;
+  transform: translateX(-15%);
+  position: absolute;
+  background: #F5F7F8;
+  color: #072541;
+  padding: 20px;
+  border-radius: 3px;
+  min-height:50vh ;
+  max-height: 75vh;
+  width: 70%; 
+  font-size: medium;
+  overflow-y: auto;
+}
+
+.modal_img{
+  width: 90%;}
+
+  .close_modal {
+    position: fixed;
+    top: 1%;
+    right: 1%;
+    background: none;
+    border: none;
+    font-size: x-large;
+    font-weight: bold;
+    transition: transform 0.3sec ease-in;
+    cursor: pointer;
+    color: #000;
+  }
 
 }

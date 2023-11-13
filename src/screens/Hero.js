@@ -25,7 +25,7 @@ function Hero() {
                         {text}
                     </span>
                 </h4>
-                <div className='buttons'>
+                <div className='buttons_hero'>
                     <Link
                         activeClass="active"
                         to="contact"

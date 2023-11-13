@@ -44,7 +44,7 @@
   width: 25%;
   height: 5%;
   margin-left: 37%;
-  background-color: #FCF5ED;
+  background-color: #0F0F0F;
   backdrop-filter: blur(5px);
   color: #EEEEEE;
   text-align: center;
@@ -231,9 +231,18 @@
     font-size: x-large;
       color: aliceblue;
       position:absolute;
+      background: 
+      linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.8) 0%,
+        rgba(0, 0, 0, 0) 80%,
+        rgba(0, 0, 0, 1.5) 100%
+      ),
+      url('https://static.vecteezy.com/system/resources/thumbnails/002/016/656/original/minimal-stars-motion-loop-background-for-project-overlay-free-video.jpg')
+      repeat center center / contain , #000; 
       background-color:transparent;
       top: 360vh;
-      margin: 0;
+      margin-top: 20%;
       padding: 0;
       height: 100vh;
       width: 100%;
@@ -249,9 +258,7 @@
     width: 80%;
     height: 5%;
     margin-left: 10%;
-    background-color: #FCF5ED;
     backdrop-filter: blur(5px);
-    color: #EEEEEE;
     text-align: center;
     justify-content: space-between;
     padding: 1% 1%;

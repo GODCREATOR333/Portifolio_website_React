@@ -10,8 +10,19 @@ function NavBar() {
         height: '21px', // Set the height to 50px
     };
 
+    const [isOpen, setIsOpen] = React.useState(false);
+
+    const handleClick = () => {
+        setIsOpen(!isOpen);
+    };
+
     return (
         <div className="navbg">
+            <div className={`hamburger-menu ${isOpen ? "open" : ""}`} onClick={handleClick}>
+                <div className="bar"></div>
+                <div className="bar"></div>
+                <div className="bar"></div>
+            </div>
             <div className="navbar-content">
                 <img className="logo" src="https://altcoinsbox.com/wp-content/uploads/2022/10/ethereum-logo-.webp" alt="logo_img" />
                 <Link

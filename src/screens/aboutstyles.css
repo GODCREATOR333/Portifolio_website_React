@@ -85,8 +85,9 @@
   height: 100%;
   content: "";
   z-index: 2;
-
 }
+
+
 .logos:before {
   left: 0; 
   background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(0, 0, 0));
@@ -165,6 +166,17 @@
     margin-right:20% ;
     line-height: 1.5;
   }
+ 
+
+  .logos:before,
+  .logos:after{
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
 
   .logos{
     top: 2%;
@@ -175,10 +187,18 @@
     position: relative;
   }
 
+  .logo_slide{
+    display: inline-block;
+    animation: 30s slide infinite linear;
+  }
+  
+  .logos:before {
+    left: 0; 
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgb(0, 0, 0));
+  }
+  
   .logos:after{
     right: 0;
-    z-index: 999999;
     background: linear-gradient(to left, rgb(0, 0, 0), rgba(255, 255, 255, 0));
   }
-
 }

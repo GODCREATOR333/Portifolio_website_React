@@ -38,7 +38,7 @@ function Tabs() {
             modal_try_link=" https://netflix-clone-5dc59.web.app"
         />,
         <ProjectCards
-            img='https://i.imgur.com/6pWzJ8y.jpg'
+            img='https://i.imgur.com/lo5I2pZ.jpg'
             title="Pose Detection "
             description="Using ML models from TensorFlow like Movenet.lightning, movenet.thunder and PoseNet to track 17 key points 
                                 on the body and predict pose in real-time"
