@@ -22,7 +22,7 @@
   font-size: x-large;
     color: #FFFBF5;
     position: absolute;
-    top: 200vh;
+    top: 180vh;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -276,4 +276,12 @@ body.active-modal {
     color: #000;
   }
 
+}
+
+
+
+@media(min-width:2560px){
+  .experiences {
+    top : 170vh
+  }
 }

@@ -51,7 +51,6 @@
     margin-top: 8%;
     margin: 15 0;
     padding: 0;
-    height: 100vh;
     width: 100%;
     text-align: center;
     font-family: 'Mona Sans','Hubot Sans', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
@@ -344,4 +343,10 @@
 
   
  
+}
+
+@media (min-width:2560px) {
+  .contact h1{
+    margin-bottom: 5%;
+  }
 }

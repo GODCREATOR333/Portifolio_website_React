@@ -23,7 +23,7 @@
     color: aliceblue;
     position:absolute;
     background-color:transparent;
-    top: 300vh;
+    top: 270vh;
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -319,4 +319,11 @@
 
 
   
+}
+
+
+@media (min-width:2560px) {
+  .projects{
+    top:240vh
+  }
 }

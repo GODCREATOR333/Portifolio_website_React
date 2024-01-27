@@ -1,6 +1,6 @@
 import React from 'react'
 import { useTypewriter } from 'react-simple-typewriter';
-import image from 'D:\\ALL__BUILDS\\cs-builds\\react-builds\\portifolio-website\\src\\images\\image.png';
+import image from 'D:\\ALL__BUILDS\\Binary_Tech\\react-builds\\portifolio-website\\src\\images\\image.png';
 import "./herostyles.css"
 import { Link } from 'react-scroll';
 

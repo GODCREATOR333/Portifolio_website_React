@@ -23,8 +23,12 @@ function NavBar() {
                 <div className="bar"></div>
                 <div className="bar"></div>
             </div>
+
+            <div className="logo_container">
+            <img className="logo" src="https://altcoinsbox.com/wp-content/uploads/2022/10/ethereum-logo-.webp" alt="logo_img" />
+            </div>
+
             <div className="navbar-content">
-                <img className="logo" src="https://altcoinsbox.com/wp-content/uploads/2022/10/ethereum-logo-.webp" alt="logo_img" />
                 <Link
                     activeClass="active"
                     to="about"

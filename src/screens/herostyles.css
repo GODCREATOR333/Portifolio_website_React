@@ -223,5 +223,18 @@
 .hi_img{
     display: none;
 }
+
 }
 
+@media (min-width:2560px) {
+
+    .hero_content{
+        margin-top: 10%;
+
+    }
+    .hi_img{
+        position: absolute;
+        right:-130%;
+        top:90%;
+    }
+}
