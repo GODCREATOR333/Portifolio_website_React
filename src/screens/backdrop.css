@@ -271,3 +271,9 @@
     );
 }}
 
+
+@media (min-width: 2100px) {
+    .notification{
+        height: 2vh;
+    }
+}

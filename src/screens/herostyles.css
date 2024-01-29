@@ -120,6 +120,20 @@
     transition: all 0.25s ease;
 }
 
+.blog_button{
+    padding: 15px;
+    width: 150px;
+    margin-left: 25px;
+    background-color:#8452e0;
+    color:#F6F6F6;
+    font-size: medium;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    border: none ;
+    transition: all 0.25s ease;
+}
+
 .contact_button:hover{
     transform:scale(1.05);
     transition-duration: 50ms;
@@ -135,7 +149,12 @@
     background-color: #F6F6F6;
 }
 
-
+.blog_button:hover{
+    transform:scale(1.05);
+    transition-duration: 50ms;
+    color:#662cb3;
+    background-color: #F6F6F6;
+}
 
 
 @media (max-width: 896px) {

@@ -41,6 +41,9 @@ function Hero() {
                     <a href="/my_resume.pdf" target="_blank" rel="noopener noreferrer">
                         <button className='resume'>Resume <span style={{ fontSize: '18px' }}> ↗ </span></button>
                     </a>
+                    <a href="#blog" target="_blank" rel="noopener noreferrer">
+                        <button className='blog_button'>Blog 📜<span style={{ fontSize: '18px' }}> ↗ </span></button>
+                    </a>
                 </div>
             </div>
         </div >
