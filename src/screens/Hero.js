@@ -1,12 +1,12 @@
 import React from 'react'
 import { useTypewriter } from 'react-simple-typewriter';
-import image from 'D:\\ALL__BUILDS\\Binary_Tech\\react-builds\\portifolio-website\\src\\images\\image.png';
+import image from '../images/image.png';
 import "./herostyles.css"
 import { Link } from 'react-scroll';
 
 function Hero() {
     const [text] = useTypewriter({
-        words: [' am a Designer', ' am a Developer', ' am an Engineer', ' like to build cool stuff'],
+        words: [' am a Designer', ' am a Developer', ' am an Engineer', ' like to build stuff'],
         loop: {},
     });
 
@@ -25,25 +25,23 @@ function Hero() {
                         {text}
                     </span>
                 </h4>
-                <div className='buttons_hero'>
-                    <Link
+
+                               <div className='buttons_hero'>
+                             <Link
                         activeClass="active"
                         to="contact"
-                        spy={true}
-                        smooth={true}
-                        offset={-70}
-                        duration={500}
-                        className="buttons"
+
                     >
                         <button className='contact_button'>Get in Touch </button>
 
                     </Link>
-                    <a href="/my_resume.pdf" target="_blank" rel="noopener noreferrer">
+                    <      a href="/my_resume.pdf"  target="_blank" rel="noopener noreferrer">
                         <button className='resume'>Resume <span style={{ fontSize: '18px' }}> ↗ </span></button>
-                    </a>
-                    <a href="#blog" target="_blank" rel="noopener noreferrer">
-                        <button className='blog_button'>Blog 📜<span style={{ fontSize: '18px' }}> ↗ </span></button>
-                    </a>
+                                   </a>
+                                 <a href="#blog" target="_blank" rel="noopener noreferrer">
+                       
+                                     <button className='blog_button'>Blog 📝<span style={{ fontSize: '18px' }}> ↗ </span></button>
+                    </a> 
                 </div>
             </div>
         </div >

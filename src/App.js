@@ -52,6 +52,7 @@ function App() {
       <About />
       <Experiences />
       <Projects />
+      <div className='hari'>
       <Link
         to="top"
         spy={true}
@@ -62,6 +63,7 @@ function App() {
       >
         ⬆Back to Top
       </Link>
+      </div>
 
 
     </div>

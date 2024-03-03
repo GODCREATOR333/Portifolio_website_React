@@ -137,7 +137,7 @@
 }
 
 
-@media (max-width: 869px) {
+@media (max-width: 1080px) {
 
     .navbg{
         position: absolute;
@@ -153,6 +153,7 @@
         top: 0;
         margin-left: -1000%;
     }
+  
     
     
         
@@ -174,16 +175,26 @@
         display: none;
     }
 
-    .line{
-        display: none;
-    }
-
-
 
     .navbar-content.open {
         display: flex;
 
     }
+    .navbar-content {
+        position: fixed;
+        display: flex;
+        margin-top:5%;
+        padding-left: 2rem; 
+     } 
+     .line {
+        top:50px;
+        position: fixed; 
+        width: 400px;
+        margin-top: 10px; 
+        color: aqua;
+    
+    }
+    
 
 }
 
