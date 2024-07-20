@@ -13,6 +13,9 @@ import Experiences from './screens/Experiences.js'
 import { getAnalytics, logEvent } from "firebase/analytics";
 import { initializeApp } from "firebase/app";
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
+
 
 const firebaseConfig = {
     apiKey: "AIzaSyBogWNVOeEfyOQc4AQtGC2_FPiKQ3Xz6QQ",

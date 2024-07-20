@@ -1,30 +1,46 @@
-.navbg{
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top:3%;
-    left: 75%;
-    align-items: baseline;
-    justify-content:space-between ;
+
+.navbar-brand {
+    background-image: url("https://altcoinsbox.com/wp-content/uploads/2022/10/ethereum-logo-.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .navbar-nav .nav-item:hover {
+    background-color: rgb(255, 255, 255);
+  }
+  
+
+.navbar-toggler {
+    border: 1px solid white;
 }
 
-.logo_container{
-    height: 60px;
-    width: 120px;
-    position: absolute;
-    margin-top: 3%;
-    right: 400%;
+.navbar-nav {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; /* Adjust the gap as needed */
+}
+.social-icons {
+    display: flex;
+    gap: 15px; /* Adjust the gap as needed */
+    justify-content: center;
+    align-items: center;
 }
 
 
-.navbar-content {
-    position: absolute;
-    display: flex;
-    margin-top:5%;
-    padding-left: 0; 
-    left: 0;
+.navbar-nav{
+    height: 100vh;
+    width: 100vw;
 }
+
+
+
+
+
+
 
 .nav_text_props{
     font-size: 1.1rem;
@@ -42,15 +58,6 @@
     cursor: pointer;
 }
 
-
-.line {
-    top:50px;
-    position: relative; 
-    width: 400px;
-    margin-top: 10px; 
-    color: aqua;
-
-}
 
 
 .nav_text_props:hover{

@@ -11,7 +11,7 @@ function Hero() {
     });
 
     return (
-        <div className='hero_bg'>
+        <div className='hero_bg '>
             <div className='heros_hero'>
                 <img
                     className='hi_img'
